@@ -2,19 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-	<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
   </PropertyGroup>
 
-	<ItemGroup>
-	  <PackageReference Include="OrchardCore.Theme.Targets" Version="3.0.1" />
-	  <PackageReference Include="OrchardCore.ContentManagement" Version="3.0.1" />
-	  <PackageReference Include="OrchardCore.DisplayManagement" Version="3.0.1" />
-	  <PackageReference Include="OrchardCore.ResourceManagement" Version="3.0.1" />
-	</ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="OrchardCore.Theme.Targets" Version="3.0.1" />
+      <PackageReference Include="OrchardCore.ContentManagement" Version="3.0.1" />
+      <PackageReference Include="OrchardCore.DisplayManagement" Version="3.0.1" />
+      <PackageReference Include="OrchardCore.ResourceManagement" Version="3.0.1" />
+    </ItemGroup>
 
   <!-- Security Updates for Orchard Core - make sure to check if these are still necessary -->
   <ItemGroup>
     <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.13" NoWarn="NU1510" />
+    <PackageReference Include="MySqlConnector" Version="2.6.2" NoWarn="NU1510" />
   </ItemGroup>
 
 </Project>
